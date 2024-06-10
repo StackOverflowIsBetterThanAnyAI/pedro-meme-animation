@@ -1,0 +1,106 @@
+@media only screen and (max-width: 384px) {
+    body {
+        padding-top: 20%;
+        height: 348px;
+    }
+
+    .animate {
+        animation: rotation 4s infinite linear,
+            zoom 0.25s infinite linear alternate,
+            bounceMobile 0.25s infinite linear alternate;
+    }
+}
+
+@media only screen and (min-width: 385px) {
+    body {
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .animate {
+        animation: rotation 4s infinite linear,
+            zoom 0.25s infinite linear alternate,
+            bounce 0.25s infinite linear alternate;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(12, 10, 10);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 384px;
+}
+
+img {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.imgContainer {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.imgOverlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgb(12, 10, 10);
+    border: 0;
+}
+
+.imgOverlay:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.animate {
+    animation: rotation 4s infinite linear, zoom 0.25s infinite linear alternate,
+        bounce 0.25s infinite linear alternate;
+}
+
+@keyframes rotation {
+    from {
+        rotate: 360deg;
+    }
+    to {
+        rotate: 0deg;
+    }
+}
+
+@keyframes zoom {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.15;
+    }
+}
+
+@keyframes bounce {
+    from {
+        translate: 0px 0px;
+    }
+    to {
+        translate: 0px 2vw;
+    }
+}
+
+@keyframes bounceMobile {
+    from {
+        translate: 0px 0px;
+    }
+    to {
+        translate: 0px 15px;
+    }
+}

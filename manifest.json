@@ -1,0 +1,17 @@
+{
+    "name": "Pedro Pedro Pedro",
+    "version": "1.0.0",
+    "description": "Watch the Raccoon dance.",
+    "manifest_version": 3,
+    "author": "Michael Münzenhofer",
+    "icons": {
+        "128": "favicon.png"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Pedro Pedro Pedro",
+        "default_icon": {
+            "128": "favicon.png"
+        }
+    }
+}

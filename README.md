@@ -1,3 +1,7 @@
+# Pedro Meme Animation
+
+## Chrome extension
+
 Chrome extension with the dancing Raccoon meme animation. <br/>
 In order to get this repository work as a Chrome extension, download the source code as a .zip file, and extract it. <br/>
 Then, open Google Chrome, and search for `chrome://extensions`. <br/>
